@@ -1,0 +1,25 @@
+gitee使用：
+名字&密码：wenxin2020   q7418520
+1、切换到对应文件夹下
+2、git clone 网址（复制）
+3、切换到新建文件夹（要上传的文件已移入）
+4、git status查看状态
+5、git add .添加所有文件
+6、git commit -m "..."提交至gitee
+7、git push --set-upstream origin master完成
+付详解
+1、文件--（git add file）--暂存区--（git commit）--本地仓库--（git push）--远程仓库
+远程仓库--（git pull）--本地仓库--（git reset）--暂存区--（git checkout）--文件
+2、git init在本地搭建仓库；；；git clone [url]克隆远程的仓库
+3、intellij IDEA的.gitignore设置提交文件的相关信息
+4、远程克隆的项目拷贝到自己创建的项目里，实现链接
+
+码云本地仓库D盘垃圾文件
+
+github:
+1、git config --global user.name
+2、git config --global user.email
+3、ssh-keygen -t rsa -C "email@address"
+4、setting--SSH and GPG keys--key中添加id_rsa.pub里的内容
+5、git remote add origin 地址
+6、git push origin master
