@@ -23,3 +23,5 @@ github:
 4、setting--SSH and GPG keys--key中添加id_rsa.pub里的内容
 5、git remote add origin 地址
 6、git push origin master
+
+学习地址https://blog.csdn.net/generallizhong/article/details/94014779
