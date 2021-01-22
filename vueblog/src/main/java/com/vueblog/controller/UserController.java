@@ -6,11 +6,8 @@ import com.vueblog.entity.User;
 import com.vueblog.service.UserService;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -32,6 +29,13 @@ public class UserController {
     @GetMapping("/index")
     public Result index(){
         User user = userService.getById(1L);
-        return Result.succ(200,"操作成功",user);
+        return Result.succ(user);
+        //200,"操作成功",
+    }
+
+    @PostMapping("/save")
+    public Result save(@Validated @RequestBody User user){
+        //@Validated自动进行user规则 校验
+        return Result.succ(user);
     }
 }

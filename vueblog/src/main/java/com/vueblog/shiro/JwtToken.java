@@ -9,6 +9,7 @@ public class JwtToken implements AuthenticationToken {
     public JwtToken(String jwt){
         this.token = jwt;
     }
+
     @Override
     public Object getPrincipal() {
         return token;

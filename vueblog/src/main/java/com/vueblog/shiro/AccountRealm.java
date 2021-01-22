@@ -4,14 +4,15 @@ import cn.hutool.core.bean.BeanUtil;
 import com.vueblog.entity.User;
 import com.vueblog.service.UserService;
 import com.vueblog.util.JwtUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+@Slf4j
 @Component
 public class AccountRealm  extends AuthorizingRealm {
 

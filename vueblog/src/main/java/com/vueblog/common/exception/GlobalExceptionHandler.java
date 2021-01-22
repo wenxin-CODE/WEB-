@@ -31,4 +31,23 @@ public class GlobalExceptionHandler {
         //log.error("运行时异常--------------{}",e);
         return Result.fail(e.getMessage());
     }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(value = MethodArgumentNotValidException.class)
+    public Result handler(MethodArgumentNotValidException e){
+
+        //log.error("实体校验异常--------------{}",e);
+        BindingResult bindingResult = e.getBindingResult();
+        ObjectError objectError = bindingResult.getAllErrors().stream().findFirst().get();
+        //筛选错误信息
+        return Result.fail(e.getMessage());
+    }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(value = IllegalArgumentException.class)
+    public Result handler(IllegalArgumentException e){
+
+        //log.error("assert异常--------------{}",e);
+        return Result.fail(e.getMessage());
+    }
 }

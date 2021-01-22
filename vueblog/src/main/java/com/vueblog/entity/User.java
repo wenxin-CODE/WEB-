@@ -28,27 +28,6 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-//    @TableId(value = "id", type = IdType.AUTO)
-//    private Long id;
-//
-//    private String username;
-//
-//    private String avatar;
-//
-//    private String email;
-//
-//    private String password;
-//
-//    private Integer status;
-//
-//    private LocalDateTime created;
-//
-//    private LocalDateTime lastLogin;
-//
-//
-//    public int getStatus() {
-//    }
-
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
