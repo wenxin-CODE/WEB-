@@ -15,7 +15,15 @@ package.json：serve : 在开发时用于查看效果的命令，视频中演示
 
 dependencies开发环境：程序员用的，，，devDependencies生产环境：公司放到服务器上
 
-setup()在beforeCreate&create之间，在setup函数中定义的变量和方法最后都是需要 return 出去的 不然无法再模板中使用
+setup()在beforeCreate&create之前，在setup函数中定义的变量和方法最后都是需要 return 出去的 不然无法再模板中使用
 setup函数只能是同步的不能是异步的
 
 Vue3 就提供了 ref 方法，实现对简单值的监听，在 js 中使用 ref 的值必须使用 .value 获取
+Vue3的reactive方法，实现了类似对象调用属性&方法的操作，将属性方法封装返回一个对象，在template中调用
+
+生命周期
+
+()=>value表示value的get方法
+
+
+？？？？？？？类型注解&类型推断
