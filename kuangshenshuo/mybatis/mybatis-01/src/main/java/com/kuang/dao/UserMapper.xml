@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kuang.dao.UserMapper">
-    <select id="getUserList" resultType="com.kuang.pojo.User">
+    <select id="getUserList" resultType="User">
         select * from mybatis.user
     </select>
 
@@ -13,6 +13,11 @@
 
     <insert id="addUser" parameterType="com.kuang.pojo.User">
         insert into mybatis.user (id, `name`, pwd) values (#{id},#{name},#{pwd});
+    </insert>
+
+<!--    map只需要和key对应-->
+    <insert id="addUser2" parameterType="map">
+        insert into mybatis.user (id, `name`, pwd) values (#{userid},#{username},#{userpwd});
     </insert>
 
     <update id="updateUser" parameterType="com.kuang.pojo.User">

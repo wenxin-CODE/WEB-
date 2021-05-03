@@ -6,7 +6,6 @@ import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.List;
 
 public class UserDaoTest {

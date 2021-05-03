@@ -3,24 +3,29 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+<!--引入外部配置文件-->
+    <properties resource="db.properties">
+<!--优先使用配置文件的属性，即这里的db.properties-->
+    </properties>
 
     <typeAliases>
         <typeAlias type="com.kuang.pojo.User" alias="User"/>
     </typeAliases>
-<!--    核心配置文件-->
+
+    <!--    核心配置文件-->
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
-                <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
             </dataSource>
         </environment>
     </environments>
 
-<!--    每个mapper.xml对应一个Mybatis注册-->
+    <!--    每个mapper.xml对应一个Mybatis注册-->
     <mappers>
         <mapper resource="com/kuang/dao/UserMapper.xml"/>
     </mappers>

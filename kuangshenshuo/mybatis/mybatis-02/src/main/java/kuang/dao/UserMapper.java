@@ -1,4 +1,4 @@
-package com.kuang.dao;
+package kuang.dao;
 
 import com.kuang.pojo.User;
 
@@ -12,8 +12,6 @@ public interface UserMapper {
     User getUserById(int id);
     //添加用户
     int addUser(User user);
-      //万能map:只查对应字段
-    int addUser2(Map<String,Object> map);
     //修改用户
     int updateUser(User user);
     //删除用户
