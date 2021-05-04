@@ -25,4 +25,8 @@
         delete from mybatis.user where id=#{id};
     </delete>
 
+    <select id="getUserByLimit" parameterType="map" resultType="User">
+        select * from mybatis.user limit #{startIndex},#{pageSize}
+    </select>
+
 </mapper>

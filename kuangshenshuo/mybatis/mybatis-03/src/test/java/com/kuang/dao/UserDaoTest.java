@@ -56,4 +56,19 @@ public class UserDaoTest {
         logger.debug("come debug");
         logger.error("com errro");
     }
+
+    @Test
+    public void getUserByLimit(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        HashMap<String,Integer> map = new HashMap<String,Integer>();
+        map.put("startIndex",0);
+        map.put("pageSize",3);
+        List<User> userList = mapper.getUserByLimit(map);
+        for(User user:userList){
+            System.out.println(user);
+        }
+
+        sqlSession.close();
+    }
 }
