@@ -9,6 +9,7 @@
         <module name="mybatis-02" />
         <module name="request" />
         <module name="mybatis-03" />
+        <module name="mybatis-04" />
         <module name="javaweb01-maven" />
         <module name="response" />
         <module name="mybatis-01" />
@@ -28,6 +29,7 @@
       <module name="mybatis-01" target="8" />
       <module name="mybatis-02" target="8" />
       <module name="mybatis-03" target="8" />
+      <module name="mybatis-04" target="8" />
       <module name="request" target="1.7" />
       <module name="response" target="1.7" />
       <module name="servlet-01" target="1.7" />
