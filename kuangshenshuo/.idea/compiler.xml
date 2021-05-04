@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-02" />
         <module name="request" />
+        <module name="mybatis-03" />
         <module name="javaweb01-maven" />
         <module name="response" />
         <module name="mybatis-01" />
