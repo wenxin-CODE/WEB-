@@ -15,7 +15,7 @@
         insert into mybatis.user (id, `name`, pwd) values (#{id},#{name},#{pwd});
     </insert>
 
-<!--    map只需要和key对应-->
+    <!--    map只需要和key对应-->
     <insert id="addUser2" parameterType="map">
         insert into mybatis.user (id, `name`, pwd) values (#{userid},#{username},#{userpwd});
     </insert>

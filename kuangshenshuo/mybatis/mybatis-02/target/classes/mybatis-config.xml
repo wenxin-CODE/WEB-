@@ -3,9 +3,9 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-<!--引入外部配置文件-->
+    <!--引入外部配置文件-->
     <properties resource="db.properties">
-<!--优先使用配置文件的属性，即这里的db.properties-->
+        <!--优先使用配置文件的属性，即这里的db.properties-->
     </properties>
 
     <typeAliases>

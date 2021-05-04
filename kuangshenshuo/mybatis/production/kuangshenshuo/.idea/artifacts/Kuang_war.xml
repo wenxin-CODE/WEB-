@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Kuang:war">
+    <output-path>$PROJECT_DIR$/Kuang/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Kuang</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Kuang.war">
+      <element id="artifact" artifact-name="Kuang:war exploded" />
+    </root>
+  </artifact>
+</component>

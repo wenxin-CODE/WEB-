@@ -7,7 +7,7 @@
     <typeAliases>
         <typeAlias type="com.kuang.pojo.User" alias="User"/>
     </typeAliases>
-<!--    核心配置文件-->
+    <!--    核心配置文件-->
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -20,7 +20,7 @@
         </environment>
     </environments>
 
-<!--    每个mapper.xml对应一个Mybatis注册-->
+    <!--    每个mapper.xml对应一个Mybatis注册-->
     <mappers>
         <mapper resource="com/kuang/dao/UserMapper.xml"/>
     </mappers>

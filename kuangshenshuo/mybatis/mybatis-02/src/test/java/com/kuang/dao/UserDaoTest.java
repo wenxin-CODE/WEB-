@@ -89,25 +89,25 @@ public class UserDaoTest {
         sqlSession.close();
     }
 
-    @Test
-    public void addUser2(){
-        SqlSession sqlSession = MybatisUtils.getSqlSession();
-
-        //相当于new对象
-        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
-
-        HashMap<String,Object> map = new HashMap<>();
-        map.put("userid",5);
-        map.put("username","aaaaaaa");
-        map.put("userpwd",2222223);
-        int result = mapper.addUser2(map);
-
-        if (result>0){
-            System.out.println("success");
-        }
-        //------------提交事务------------
-        sqlSession.commit();
-        sqlSession.close();
-    }
+//    @Test
+//    public void addUser2(){
+//        SqlSession sqlSession = MybatisUtils.getSqlSession();
+//
+//        //相当于new对象
+//        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+//
+//        HashMap<String,Object> map = new HashMap<>();
+//        map.put("userid",5);
+//        map.put("username","aaaaaaa");
+//        map.put("userpwd",2222223);
+//        int result = mapper.addUser2(map);
+//
+//        if (result>0){
+//            System.out.println("success");
+//        }
+//        //------------提交事务------------
+//        sqlSession.commit();
+//        sqlSession.close();
+//    }
 
 }
