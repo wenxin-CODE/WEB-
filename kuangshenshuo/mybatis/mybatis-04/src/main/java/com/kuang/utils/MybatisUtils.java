@@ -30,7 +30,7 @@ public class MybatisUtils {
 
     //创建对象
     public static SqlSession getSqlSession(){
-        return sqlSessionFactory.openSession();
-
+        return sqlSessionFactory.openSession(true);
+        //opensession参数autocommit设为true，后续自动提交
     }
 }
