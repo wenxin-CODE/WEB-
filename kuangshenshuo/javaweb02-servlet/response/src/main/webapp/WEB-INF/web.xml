@@ -8,7 +8,7 @@
     
     <servlet>
         <servlet-name>filedown</servlet-name>
-        <servlet-class>com.kuang.servlet.FileServlet</servlet-class>
+        <servlet-class>com.com.kuang.servlet.FileServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>filedown</servlet-name>
@@ -17,7 +17,7 @@
 
     <servlet>
         <servlet-name>ImageServlet</servlet-name>
-        <servlet-class>com.kuang.servlet.ImageServlet</servlet-class>
+        <servlet-class>com.com.kuang.servlet.ImageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ImageServlet</servlet-name>
@@ -26,7 +26,7 @@
 
     <servlet>
         <servlet-name>RedirectServlet</servlet-name>
-        <servlet-class>com.kuang.servlet.RedirectServlet</servlet-class>
+        <servlet-class>com.com.kuang.servlet.RedirectServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RedirectServlet</servlet-name>
@@ -35,7 +35,7 @@
 
     <servlet>
         <servlet-name>RequestTest</servlet-name>
-        <servlet-class>com.kuang.servlet.RequestTest</servlet-class>
+        <servlet-class>com.com.kuang.servlet.RequestTest</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>RequestTest</servlet-name>

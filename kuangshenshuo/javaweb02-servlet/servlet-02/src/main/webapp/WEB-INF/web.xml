@@ -13,7 +13,7 @@
 
     <servlet>
         <servlet-name>hello</servlet-name>
-        <servlet-class>com.kuang.servlet.HelloServlet</servlet-class>
+        <servlet-class>com.com.kuang.servlet.HelloServlet</servlet-class>
     </servlet>
     
     <servlet-mapping>
@@ -23,7 +23,7 @@
 
     <servlet>
         <servlet-name>getc</servlet-name>
-        <servlet-class>com.kuang.servlet.GetServlet</servlet-class>
+        <servlet-class>com.com.kuang.servlet.GetServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -33,7 +33,7 @@
 
     <servlet>
         <servlet-name>mysql</servlet-name>
-        <servlet-class>com.kuang.servlet.ServletDemo3</servlet-class>
+        <servlet-class>com.com.kuang.servlet.ServletDemo3</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -43,7 +43,7 @@
 
     <servlet>
         <servlet-name>forw</servlet-name>
-        <servlet-class>com.kuang.servlet.ServletDemo4</servlet-class>
+        <servlet-class>com.com.kuang.servlet.ServletDemo4</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -53,7 +53,7 @@
 
     <servlet>
         <servlet-name>prop</servlet-name>
-        <servlet-class>com.kuang.servlet.ServletDemo5</servlet-class>
+        <servlet-class>com.com.kuang.servlet.ServletDemo5</servlet-class>
     </servlet>
 
     <servlet-mapping>

@@ -8,7 +8,7 @@
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.kuang.servlet.LoginServlet</servlet-class>
+        <servlet-class>com.com.kuang.servlet.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>

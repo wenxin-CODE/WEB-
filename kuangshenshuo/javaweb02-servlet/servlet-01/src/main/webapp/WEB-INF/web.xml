@@ -8,7 +8,7 @@
 <!--    注册-->
     <servlet>
         <servlet-name>hello</servlet-name>
-        <servlet-class>com.kuang.servlet.HelloServlet</servlet-class>
+        <servlet-class>com.com.kuang.servlet.HelloServlet</servlet-class>
     </servlet>
 <!--    请求路径-->
     <servlet-mapping>
@@ -29,7 +29,7 @@
 <!--    404-->
     <servlet>
         <servlet-name>error</servlet-name>
-        <servlet-class>com.kuang.servlet.ErrorServlet</servlet-class>
+        <servlet-class>com.com.kuang.servlet.ErrorServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

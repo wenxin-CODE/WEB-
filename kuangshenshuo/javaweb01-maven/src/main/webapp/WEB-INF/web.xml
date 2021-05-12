@@ -14,7 +14,7 @@
 
   <servlet>
     <servlet-name>helloservlet</servlet-name>
-    <servlet-class>com.kuang.servlet.HelloServlet</servlet-class>
+    <servlet-class>com.com.kuang.servlet.HelloServlet</servlet-class>
   </servlet>
 <!--  servlet映射-->
   <servlet-mapping>
