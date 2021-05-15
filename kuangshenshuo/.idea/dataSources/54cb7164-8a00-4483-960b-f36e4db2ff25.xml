@@ -740,36 +740,40 @@
       <ObjectGrants>ALL PRIVILEGES!
 </ObjectGrants>
     </user>
-    <table id="232" parent="3" name="student"/>
-    <table id="233" parent="3" name="teacher"/>
-    <table id="234" parent="3" name="user"/>
-    <column id="235" parent="232" name="id">
+    <table id="232" parent="3" name="blog"/>
+    <table id="233" parent="3" name="student"/>
+    <table id="234" parent="3" name="teacher"/>
+    <table id="235" parent="3" name="user"/>
+    <column id="236" parent="232" name="id">
       <Position>1</Position>
-      <DataType>int(10)|0s</DataType>
+      <Comment>博客id</Comment>
+      <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="236" parent="232" name="name">
+    <column id="237" parent="232" name="title">
       <Position>2</Position>
-      <DataType>varchar(30)|0s</DataType>
+      <Comment>博客标题</Comment>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="237" parent="232" name="tid">
+    <column id="238" parent="232" name="author">
       <Position>3</Position>
-      <DataType>int(10)|0s</DataType>
+      <Comment>博客作者</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <index id="238" parent="232" name="fktid">
-      <ColNames>tid</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="239" parent="232" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="240" parent="232" name="fktid">
-      <ColNames>tid</ColNames>
-      <RefTableName>teacher</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
+    <column id="239" parent="232" name="create_time">
+      <Position>4</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="240" parent="232" name="views">
+      <Position>5</Position>
+      <Comment>浏览量</Comment>
+      <DataType>int(30)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
     <column id="241" parent="233" name="id">
       <Position>1</Position>
       <DataType>int(10)|0s</DataType>
@@ -779,25 +783,52 @@
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <key id="243" parent="233" name="PRIMARY">
+    <column id="243" parent="233" name="tid">
+      <Position>3</Position>
+      <DataType>int(10)|0s</DataType>
+    </column>
+    <index id="244" parent="233" name="fktid">
+      <ColNames>tid</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="245" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="244" parent="234" name="id">
+    <foreign-key id="246" parent="233" name="fktid">
+      <ColNames>tid</ColNames>
+      <RefTableName>teacher</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="247" parent="234" name="id">
+      <Position>1</Position>
+      <DataType>int(10)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="248" parent="234" name="name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+    </column>
+    <key id="249" parent="234" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="250" parent="235" name="id">
       <Position>1</Position>
       <DataType>int(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="245" parent="234" name="name">
+    <column id="251" parent="235" name="name">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="246" parent="234" name="pwd">
+    <column id="252" parent="235" name="pwd">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <key id="247" parent="234" name="PRIMARY">
+    <key id="253" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
