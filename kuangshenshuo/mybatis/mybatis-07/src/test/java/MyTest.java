@@ -46,7 +46,8 @@ public class MyTest {
 
         HashMap map = new HashMap();
         map.put("title","python so easy");
-        List<Blog> blogs = mapper.queryBlogIf(map);
+        map.put("views","9999");
+        List<Blog> blogs = mapper.queryBlogChoose(map);
 
         for (Blog blog : blogs) {
             System.out.println(blog);
