@@ -11,6 +11,8 @@
     <modules>
         <module>sprint-01-ioc1</module>
         <module>spring-02-hellospring</module>
+        <module>spring-04-di</module>
+        <module>spring-05-Autowired</module>
     </modules>
 
     <properties>
@@ -23,6 +25,13 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>5.2.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

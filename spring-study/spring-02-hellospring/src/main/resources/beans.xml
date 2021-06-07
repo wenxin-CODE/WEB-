@@ -3,7 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
-<!--    使用spring创建对象-->
+<!--    使用spring创建对象
+        id = 变量名
+        class = new的对象
+        property给属性设值
+-->
     <bean id="hello" class="com.kuang.pojo.Hello">
         <property name="str" value="spring"/>
     </bean>
