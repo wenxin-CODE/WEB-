@@ -1,0 +1,15 @@
+server:
+  port: 7002
+#  servlet:
+#    context-path: /eureka
+
+#Eureka配置
+eureka:
+  instance:
+    #    hostname: localhost # Eureka服务端实例的名字
+    hostname: eureka7002.com # Eureka服务端实例的名字
+  client:
+    register-with-eureka: false  # 表示是否向Eureka注册中心注册自己
+    fetch-registry: false #如果为false，则表示自己为注册中心
+    service-url: # 监控页面地址
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="cat" class="com.kuang.pojo.Cat"/>
+    <bean id="dog" class="com.kuang.pojo.Dog"/>
+    <bean id="user" class="com.kuang.pojo.User"/>
+<!--    value用于基本数据类型,ref用于对现象-->
+<!--    <bean id="user" class="com.kuang.pojo.User">-->
+<!--        <property name="cat" ref="cat"/>-->
+<!--        <property name="dog" ref="dog"/>-->
+<!--        <property name="str" value="qinjiang"/>-->
+<!--    </bean>-->
+
+<!--    自动装配byname,注意这个需要set方法，而注解的不需要-->
+<!--    <bean id="user" class="com.kuang.pojo.User" autowire="byName"  >-->
+<!--        <property name="str" value="qinjiang"/>-->
+<!--    </bean>-->
+
+<!--    这个是表示支持使用注解的-->
+    <context:annotation-config></context:annotation-config>
+</beans>

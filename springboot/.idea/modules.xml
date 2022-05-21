@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springboot-01-helloworld/springboot-01-helloworld.iml" filepath="$PROJECT_DIR$/springboot-01-helloworld/springboot-01-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-02-config/springboot-02-config.iml" filepath="$PROJECT_DIR$/springboot-02-config/springboot-02-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-03-web/springboot-03-web.iml" filepath="$PROJECT_DIR$/springboot-03-web/springboot-03-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-04-data/springboot-04-data.iml" filepath="$PROJECT_DIR$/springboot-04-data/springboot-04-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-05-mybatis/springboot-05-mybatis.iml" filepath="$PROJECT_DIR$/springboot-05-mybatis/springboot-05-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-09-test/springboot-09-test.iml" filepath="$PROJECT_DIR$/springboot-09-test/springboot-09-test.iml" />
+    </modules>
+  </component>
+</project>

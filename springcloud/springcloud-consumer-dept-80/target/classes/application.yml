@@ -1,0 +1,16 @@
+server:
+  port: 80
+spring:
+  devtools:
+    livereload:
+      port: 35730
+# Spring boot Unable to start LiveReload server
+#根本原因是：在使用SpringBoot 热部署插件 devtools ,同时启动多个Application时，控制台会报这个警告；
+
+#Eureka配置
+eureka:
+  client:
+    register-with-eureka: false #不向eureka中注册自己
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+

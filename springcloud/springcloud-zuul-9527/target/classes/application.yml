@@ -1,0 +1,32 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: springcloud-zuul #微服务名称
+
+# eureka 注册中心配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance: #实例的id
+    instance-id: zuul9527.com
+    prefer-ip-address: true # 显示ip
+
+info:
+  app.name: haust.springcloud # 项目名称
+  company.name: 阿里巴巴 # 公司名称
+
+# zull 路由网关配置
+zuul:
+  # 路由相关配置
+  # 原来访问路由 eg:http://www.cspstudy.com:9527/springcloud-provider-dept/dept/get/1
+  # zull路由配置后访问路由 eg:http://www.cspstudy.com:9527/haust/mydept/dept/get/1
+  routes:
+    mydept.serviceId: springcloud-provider-dept # eureka注册中心的服务提供方路由名称
+    mydept.path: /mydept/** # 将eureka注册中心的服务提供方路由名称 改为自定义路由名称
+  # 不能再使用这个路径访问了，*： 忽略,隐藏全部的服务名称~
+  ignored-services: "*"
+  # 设置公共的前缀
+  prefix: /haust

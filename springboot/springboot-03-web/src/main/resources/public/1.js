@@ -1,0 +1,2 @@
+hello
+//resource>static>public

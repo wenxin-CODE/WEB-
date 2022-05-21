@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.kuang.pojo.Person",
+      "sourceType": "com.kuang.pojo.Person"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

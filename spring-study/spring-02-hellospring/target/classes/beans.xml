@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    使用spring创建对象
+        id = 变量名
+        class = new的对象
+        property给属性设值
+-->
+    <bean id="hello" class="com.kuang.pojo.Hello">
+        <property name="str" value="spring"/>
+    </bean>
+
+<!--    无参构造-->
+    <bean id="user" class="com.kuang.pojo.User">
+        <property name="name" value="kuangshen"/>
+    </bean>
+
+<!--    有参构造三种方式-->
+    <!-- 第一种根据index参数下标设置 -->
+    <bean id="userT" class="com.kuang.pojo.UserT">
+        <!-- index指构造方法 , 下标从0开始 -->
+        <constructor-arg index="0" value="kuangshen2"/>
+    </bean>
+    <!-- 第二种根据参数名字设置 -->
+<!--    <bean id="userT" class="com.kuang.pojo.UserT">-->
+<!--        &lt;!&ndash; name指参数名 &ndash;&gt;-->
+<!--        <constructor-arg name="name" value="kuangshen2"/>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash; 第三种根据参数类型设置 &ndash;&gt;-->
+<!--    <bean id="userT" class="com.kuang.pojo.UserT">-->
+<!--        <constructor-arg type="java.lang.String" value="kuangshen2"/>-->
+<!--    </bean>-->
+
+</beans>

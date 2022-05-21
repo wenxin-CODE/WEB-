@@ -1,0 +1,35 @@
+server:
+  port: 8001
+
+#mybatis配置
+mybatis:
+  type-aliases-package: com.wu.springcloud.pojo
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+#spring的配置
+spring:
+  application:
+    name: springcloud-provider-dept  # 3个服务名称一致是前提
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  #数据源
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db01?useUnicode=true&characterEncoding=UTF-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 123456
+
+#eureka 的配置，服务注册到哪里
+#eureka 的配置，服务注册到哪里
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+  instance:
+    instance-id: springcloud-provider-dept8001  #修改Eureka上的默认的状态名字
+
+#info配置（点击状态信息会返回的东西，可以百度）
+#可以描述这个服务是谁开发的
+info:
+  app.name: wulei-springcloud
+  company.name: blog.wulei2921625957.com
