@@ -13,7 +13,7 @@
     "bluebird": "^3.5.5",
     "console": "^0.7.2",
     "core-js": "^3.6.5",
-    "element-ui": "^2.15.8",
+    "element-ui": "^2.15.9",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^4.0.2"
