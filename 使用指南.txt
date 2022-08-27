@@ -25,3 +25,5 @@ github:
 6、git push origin master
 
 学习地址https://blog.csdn.net/generallizhong/article/details/94014779
+
+8.27更新再试一遍
