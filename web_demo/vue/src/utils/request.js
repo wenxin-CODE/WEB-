@@ -17,8 +17,11 @@ axios.defaults.baseURL = 'http://localhost:9090'
 // 这里设置请求头
 request.interceptors.request.use(config => {
     config.headers['Content-Type'] = 'application/json;charset=utf-8';
-  
- // config.headers['token'] = user.token;  // 设置请求头
+    // 查看后端传过来的token是否存在
+    let user = localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : null
+    if(user){
+        config.headers['token'] = user.token;  // 设置请求头
+    }
     return config
 }, error => {
     return Promise.reject(error)
