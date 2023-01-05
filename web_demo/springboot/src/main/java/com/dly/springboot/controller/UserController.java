@@ -13,7 +13,10 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URLEncoder;
 import java.sql.ResultSet;
 import java.util.List;
@@ -36,6 +39,7 @@ import org.springframework.web.multipart.MultipartFile;
 @RequestMapping("/user")
 public class UserController {
 
+    private static final String PATH = "D:\\Python\\main.py";
     @Resource
     private IUserService userService;
 
@@ -161,6 +165,22 @@ public class UserController {
 //        List<User> list = reader.read(0, 1, User.class);
         userService.saveBatch(list);
         return true;
+    }
+
+    @GetMapping("/python")
+    public void testMethod1() throws IOException, InterruptedException
+    {
+        final ProcessBuilder processBuilder = new ProcessBuilder("python", PATH);
+        processBuilder.redirectErrorStream(true);
+        final Process process = processBuilder.start();
+        final BufferedReader in = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        String s = null;
+        while ((s = in.readLine()) != null)
+        {
+            System.out.println(s);
+        }
+        final int exitCode = process.waitFor();
+        System.out.println(exitCode == 0);
     }
 
 }
