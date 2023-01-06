@@ -27,3 +27,4 @@ github:
 学习地址https://blog.csdn.net/generallizhong/article/details/94014779
 
 8.27更新再试一遍
+2023.1.6重装了系统
