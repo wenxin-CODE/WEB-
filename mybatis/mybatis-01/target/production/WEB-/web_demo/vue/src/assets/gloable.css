@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ‘*’表示页面里的所有标签，box-sizing: border-box 设置为盒状 */
+/* 不要边框 */
+
+/* html,body{
+    height: 100%;
+} */
+/* 占满屏幕 */
+
+.ml-5 {
+    margin-left: 10px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.pd-10 {
+    padding: 10px 0;
+}

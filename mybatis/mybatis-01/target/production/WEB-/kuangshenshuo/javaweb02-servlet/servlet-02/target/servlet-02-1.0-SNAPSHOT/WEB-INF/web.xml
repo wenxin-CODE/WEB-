@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+
+    <context-param>
+        <param-name>url</param-name>
+        <param-value>jdbc:mysql://localhost:3306</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.kuang.servlet.HelloServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getc</servlet-name>
+        <servlet-class>com.kuang.servlet.GetServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getc</servlet-name>
+        <url-pattern>/getc</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mysql</servlet-name>
+        <servlet-class>com.kuang.servlet.ServletDemo3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mysql</servlet-name>
+        <url-pattern>/mysql</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>forw</servlet-name>
+        <servlet-class>com.kuang.servlet.ServletDemo4</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>forw</servlet-name>
+        <url-pattern>/forw</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>prop</servlet-name>
+        <servlet-class>com.kuang.servlet.ServletDemo5</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>prop</servlet-name>
+        <url-pattern>/prop</url-pattern>
+    </servlet-mapping>
+</web-app>

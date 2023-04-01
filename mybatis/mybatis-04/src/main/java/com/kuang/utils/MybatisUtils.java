@@ -33,4 +33,8 @@ public class MybatisUtils {
         return sqlSessionFactory.openSession(true);
         //opensession参数autocommit设为true，后续自动提交
     }
+
+    public static SqlSession getSession(boolean flag){
+        return sqlSessionFactory.openSession(flag);
+    }
 }

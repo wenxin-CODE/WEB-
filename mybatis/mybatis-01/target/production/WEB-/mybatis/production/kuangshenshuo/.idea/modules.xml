@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Kuang/Kuang.iml" filepath="$PROJECT_DIR$/Kuang/Kuang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb01-maven/javaweb01-maven.iml" filepath="$PROJECT_DIR$/javaweb01-maven/javaweb01-maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb02-maven/javaweb02-maven.iml" filepath="$PROJECT_DIR$/javaweb02-maven/javaweb02-maven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb02-servlet/javaweb02-servlet.iml" filepath="$PROJECT_DIR$/javaweb02-servlet/javaweb02-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/kuangshenshuo.iml" filepath="$PROJECT_DIR$/.idea/kuangshenshuo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis-01/mybatis-01.iml" filepath="$PROJECT_DIR$/mybatis/mybatis-01/mybatis-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis-02/mybatis-02.iml" filepath="$PROJECT_DIR$/mybatis/mybatis-02/mybatis-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb02-servlet/request/request.iml" filepath="$PROJECT_DIR$/javaweb02-servlet/request/request.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb02-servlet/response/response.iml" filepath="$PROJECT_DIR$/javaweb02-servlet/response/response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb02-servlet/servlet-01/servlet-01.iml" filepath="$PROJECT_DIR$/javaweb02-servlet/servlet-01/servlet-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb02-servlet/servlet-02/servlet-02.iml" filepath="$PROJECT_DIR$/javaweb02-servlet/servlet-02/servlet-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaweb02-servlet/session01/session01.iml" filepath="$PROJECT_DIR$/javaweb02-servlet/session01/session01.iml" />
+    </modules>
+  </component>
+</project>

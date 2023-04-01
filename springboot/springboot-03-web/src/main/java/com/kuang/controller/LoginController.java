@@ -9,6 +9,7 @@ import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.http.HttpSession;
 
+//使用http://localhost:8081/kuang/进行登录
 @Controller
 public class LoginController {
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kuang.dao.StudentMapper">
+
+<!--    按照结果嵌套处理-->
+    <select id="getStudent2" resultMap="StudentTeacher2">
+        select s.id sid,s.name sname,t.name tname
+        from student s,teacher t
+        where s.tid = t.id
+    </select>
+
+    <resultMap id="StudentTeacher2" type="com.kuang.pojo.Student">
+<!--        也可以使用id，name啥的-->
+        <result property="id" column="sid"/>
+        <result property="name" column="sname"/>
+<!--        对象用association-->
+<!--        集合用collection-->
+        <association property="teacher" javaType="com.kuang.pojo.Teacher">
+            <result property="name" column="tname"/>
+        </association>
+    </resultMap>
+
+<!--================================================-->
+<!--  查询所有学生信息
+        嵌套查询
+       根据学生tid，査老师-->
+    <select id="getStudent" resultMap="StudentTeacher">
+        select * from student;
+    </select>
+
+    <resultMap id="StudentTeacher" type="com.kuang.pojo.Student">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+<!--        处理对象-->
+        <association property="teacher" column="tid" javaType="com.kuang.pojo.Teacher" select="getTeacher"/>
+    </resultMap>
+
+    <select id="getTeacher" resultType="com.kuang.pojo.Teacher">
+        select * from teacher where id = #{tid}
+    </select>
+</mapper>

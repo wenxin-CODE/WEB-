@@ -12,7 +12,7 @@
     <bean id="mysqlimpl" class="com.kuang.dao.UserDaoMysqlImpl"/>
     
     <bean id="UserServiceImpl" class="com.kuang.service.UserServiceImpl">
-        <property name="userDao" ref="mysqlimpl"/>
+        <property name="userDao" ref="impl"/>
     </bean>
 
 </beans>

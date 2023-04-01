@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis-02" />
+        <module name="request" />
+        <module name="javaweb01-maven" />
+        <module name="response" />
+        <module name="mybatis-01" />
+        <module name="Kuang" />
+        <module name="servlet-02" />
+        <module name="javaweb02-maven" />
+        <module name="servlet-01" />
+        <module name="session01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="javaweb01-maven" target="1.7" />
+      <module name="javaweb02-maven" target="1.5" />
+      <module name="javaweb02-servlet" target="1.5" />
+      <module name="Kuang" target="1.7" />
+      <module name="mybatis" target="1.5" />
+      <module name="mybatis-01" target="8" />
+      <module name="mybatis-02" target="8" />
+      <module name="mybatis-03" target="8" />
+      <module name="request" target="1.7" />
+      <module name="response" target="1.7" />
+      <module name="servlet-01" target="1.7" />
+      <module name="servlet-02" target="1.5" />
+      <module name="session01" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

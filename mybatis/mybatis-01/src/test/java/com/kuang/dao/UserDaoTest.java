@@ -19,11 +19,11 @@ public class UserDaoTest {
         //方法1
         // getMapper：UserMapper相当于UserDao的实现类，
         // 使用UserDao接口来创建对象，再调用对象的方法
-        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
-        List<User> userList = mapper.getUserList();
+//        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+//        List<User> userList = mapper.getUserList();
 
         //方法2
-//        List<User> userList = sqlSession.selectList("com.com.kuang.dao.UserDao.getUserList");
+        List<User> userList = sqlSession.selectList("com.kuang.dao.UserMapper.getUserList");
         for (User user : userList) {
             System.out.println(user.toString());
             System.out.print(user.getId());

@@ -8,6 +8,6 @@ public class MyTest {
     public void test(){
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         UserService userService = (UserService) context.getBean("userService");
-        userService.search();
+        userService.update();
     }
 }

@@ -41,7 +41,7 @@ public class UserDaoTest {
 
         //相当于new对象
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
-        User user = mapper.getUserById(3);
+        User user = mapper.getUserById(2);
         System.out.println(user.toString());
 
         sqlSession.close();

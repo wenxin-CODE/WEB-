@@ -12,6 +12,7 @@
         <module name="spring-04-di" />
         <module name="spring-07-aop" />
         <module name="spring-06-anno" />
+        <module name="sprint-01-ioc1" />
         <module name="spring-01-ioc1" />
         <module name="spring-05-Autowired" />
       </profile>

@@ -10,9 +10,10 @@
     -->
     <bean id="impl" class="com.kuang.dao.UserDaoImpl"/>
     <bean id="mysqlimpl" class="com.kuang.dao.UserDaoMysqlImpl"/>
-    
+
+<!--    ref指定调用userdao的那个实现类-->
     <bean id="UserServiceImpl" class="com.kuang.service.UserServiceImpl">
-        <property name="userDao" ref="mysqlimpl"/>
+        <property name="userDao" ref="impl"/>
     </bean>
 
 </beans>

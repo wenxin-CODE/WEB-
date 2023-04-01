@@ -6,6 +6,7 @@ public class UserT {
 
     public UserT(String name) {
         this.name = name;
+        System.out.println("UserT有参构造成功");
     }
 
     public void setName(String name) {
