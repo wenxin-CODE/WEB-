@@ -7,7 +7,7 @@ public class Testx {
     @Test
     public void test(){
         ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext("applicationCOntext.xml");
+                new ClassPathXmlApplicationContext("applicationContext.xml");
         User user = (User) applicationContext.getBean("user");
         System.out.println(user.name);
     }

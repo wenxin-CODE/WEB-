@@ -10,18 +10,18 @@ import java.util.List;
 public class UserMapperImpl extends SqlSessionDaoSupport implements UserMapper {
 
     //sqlSession不用我们自己创建了，Spring来管理
-//    private SqlSessionTemplate sqlSession;
-//
-//    public void setSqlSession(SqlSessionTemplate sqlSession) {
-//        this.sqlSession = sqlSession;
-//    }
+    private SqlSessionTemplate sqlSession;
+
+    public void setSqlSession(SqlSessionTemplate sqlSession) {
+        this.sqlSession = sqlSession;
+    }
 
     public List<User> selectUser() {
-        User user = new User(4,"小明","123456");
-        UserMapper mapper = getSqlSession().getMapper(UserMapper.class);
-        mapper.addUser(user);
-        mapper.deleteUser(3);
-//        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+//        User user = new User(4,"小明","123456");
+//        UserMapper mapper = getSqlSession().getMapper(UserMapper.class);
+//        mapper.addUser(user);
+//        mapper.deleteUser(3);
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
         return mapper.selectUser();
     }
 

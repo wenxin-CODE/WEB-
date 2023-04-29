@@ -21,7 +21,7 @@
 <!--    </environments>-->
 
 <!--    <mappers>-->
-<!--&lt;!&ndash;        搞清楚下面这一句的规则&ndash;&gt;-->
+<!--&lt;!&ndash;        搞清楚下面这一句的规则:这里是一个类&ndash;&gt;-->
 <!--        <mapper class="com.kuang.mapper.UserMapper"/>-->
 <!--    </mappers>-->
 </configuration>

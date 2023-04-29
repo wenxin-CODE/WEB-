@@ -28,7 +28,7 @@
     </bean>
 
     <!--注册sqlSessionTemplate , 关联sqlSessionFactory-->
-    <bean id="sqlSessionF" class="org.mybatis.spring.SqlSessionTemplate">
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
         <!--利用构造器注入-->
         <constructor-arg index="0" ref="sqlSessionFactory"/>
     </bean>
