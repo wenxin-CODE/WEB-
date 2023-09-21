@@ -7,16 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-03-web" />
         <module name="springboot-05-mybatis" />
+        <module name="springboot-09-test" />
+        <module name="springboot-03-web" />
         <module name="springboot-02-config" />
         <module name="springboot-01-helloworld" />
-        <module name="springboot-09-test" />
         <module name="springboot-04-data" />
+        <module name="springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="springboot-01-helloworld" target="1.8" />
+      <module name="springboot" target="1.5" />
+      <module name="springboot-01-helloworld" target="1.5" />
       <module name="springboot-02-config" target="1.8" />
       <module name="springboot-03-web" target="1.8" />
       <module name="springboot-04-data" target="1.8" />
