@@ -55,7 +55,7 @@ public class UserDaoTest {
         //相当于new对象
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        int result = mapper.addUser(new User(4, "haha", "521"));
+        int result = mapper.addUser(new User(5, "haha", "521"));
 
         if (result>0){
             System.out.println("success");
@@ -98,9 +98,9 @@ public class UserDaoTest {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
         HashMap<String,Object> map = new HashMap<>();
-        map.put("userid",5);
-        map.put("username","aaaaaaa");
-        map.put("userpwd",2222223);
+        map.put("userid",6);
+        map.put("username","aaaabb");
+        map.put("userpwd",22345);
         int result = mapper.addUser2(map);
 
         if (result>0){
