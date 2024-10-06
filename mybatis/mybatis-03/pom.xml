@@ -11,12 +11,12 @@
 
     <artifactId>mybatis-03</artifactId>
     <dependencies>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.example</groupId>
             <artifactId>mybatis-03</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
