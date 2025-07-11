@@ -22,5 +22,6 @@
 <!--    </bean>-->
 
 <!--    这个是表示支持使用注解的-->
+<!--    基本数据类型怎么赋值-->
     <context:annotation-config></context:annotation-config>
 </beans>
