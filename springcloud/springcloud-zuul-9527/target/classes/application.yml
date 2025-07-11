@@ -29,4 +29,4 @@ zuul:
   # 不能再使用这个路径访问了，*： 忽略,隐藏全部的服务名称~
   ignored-services: "*"
   # 设置公共的前缀
-  prefix: /haust
+  prefix: /wu
